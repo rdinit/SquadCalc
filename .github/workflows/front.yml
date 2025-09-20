@@ -23,4 +23,5 @@ jobs:
           ssh-add /home/runner/.ssh/id_ed25519
     - name: push2serv
       run: |
-          scp -r build ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/squadcalc/static/
+          ls
+          scp -r dist ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/squadcalc/static/
