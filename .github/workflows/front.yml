@@ -24,4 +24,4 @@ jobs:
     - name: push2serv
       run: |
           mv dist static
-          scp -r dist ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/squadcalc/
+          scp -r static ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/squadcalc/
